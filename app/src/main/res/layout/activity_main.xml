@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	style="@style/CustomRelativeLayout"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<ImageView
+		android:id="@+id/logo"
+		style="@style/CustomLogoImageView"
+		android:contentDescription="@string/app_name"/>
+
+	<ListView
+		android:id="@+id/list_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/logo"
+		android:scrollbars="none"/>
+
+</RelativeLayout>

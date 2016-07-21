@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	style="@style/CustomRelativeLayout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:scrollbarStyle="outsideOverlay">
+
+	<RelativeLayout
+		android:id="@+id/activity_manage_user"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/title_profile"
+			style="@style/TextAppearance.AppCompat.Medium"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:text="@string/title_profile"
+			android:textColor="@color/colorPrimary"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:id="@+id/profile"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/title_profile"
+			android:text="@string/signed_out"/>
+
+		<LinearLayout
+			android:id="@+id/provider_fields"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/profile"
+			android:orientation="vertical">
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="@dimen/activity_vertical_margin"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:background="@android:color/darker_gray"/>
+
+			<TextView
+				android:id="@+id/title_provider"
+				style="@style/TextAppearance.AppCompat.Medium"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/title_provider"
+				android:textColor="@color/colorPrimary"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:id="@+id/provider"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="@dimen/activity_vertical_margin"
+				tools:text="@string/app_name"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/update_profile_fields"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/provider_fields"
+			android:orientation="vertical">
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="@dimen/activity_vertical_margin"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:background="@android:color/darker_gray"/>
+
+			<TextView
+				android:id="@+id/title_update_profile"
+				style="@style/TextAppearance.AppCompat.Medium"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/title_update_profile"
+				android:textColor="@color/colorPrimary"
+				android:textStyle="bold"/>
+
+			<EditText
+				android:id="@+id/field_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/hint_name"
+				android:inputType="textPersonName"/>
+
+			<EditText
+				android:id="@+id/field_photo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/hint_photo"
+				android:inputType="textUri"/>
+
+			<Button
+				android:id="@+id/update_profile_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/title_update_profile"
+				android:theme="@style/ThemeOverlay.MyDarkButton"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/update_email_fields"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/update_profile_fields"
+			android:orientation="vertical">
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="@dimen/activity_vertical_margin"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:background="@android:color/darker_gray"/>
+
+			<TextView
+				android:id="@+id/title_update_email"
+				style="@style/TextAppearance.AppCompat.Medium"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/title_update_email"
+				android:textColor="@color/colorPrimary"
+				android:textStyle="bold"/>
+
+			<EditText
+				android:id="@+id/field_email"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/hint_email"
+				android:inputType="textEmailAddress"/>
+
+			<Button
+				android:id="@+id/update_email_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/title_update_email"
+				android:theme="@style/ThemeOverlay.MyDarkButton"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/update_password_fields"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/update_email_fields"
+			android:orientation="vertical">
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="@dimen/activity_vertical_margin"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:background="@android:color/darker_gray"/>
+
+			<TextView
+				android:id="@+id/title_update_password"
+				style="@style/TextAppearance.AppCompat.Medium"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/title_update_password"
+				android:textColor="@color/colorPrimary"
+				android:textStyle="bold"/>
+
+			<EditText
+				android:id="@+id/field_password"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/hint_password"
+				android:inputType="textPassword"/>
+
+			<Button
+				android:id="@+id/update_password_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/title_update_password"
+				android:theme="@style/ThemeOverlay.MyDarkButton"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/send_password_reset_fields"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/update_password_fields"
+			android:orientation="vertical">
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="@dimen/activity_vertical_margin"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:background="@android:color/darker_gray"/>
+
+			<TextView
+				android:id="@+id/title_send_password_reset"
+				style="@style/TextAppearance.AppCompat.Medium"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/title_send_password_reset"
+				android:textColor="@color/colorPrimary"
+				android:textStyle="bold"/>
+
+			<EditText
+				android:id="@+id/field_email_reset"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/hint_email"
+				android:inputType="textEmailAddress"/>
+
+			<Button
+				android:id="@+id/send_password_reset_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/title_send_password_reset"
+				android:theme="@style/ThemeOverlay.MyDarkButton"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/delete_fields"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/send_password_reset_fields"
+			android:orientation="vertical">
+
+			<View
+				android:id="@+id/line"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="@dimen/activity_vertical_margin"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:background="@android:color/darker_gray"/>
+
+			<Button
+				android:id="@+id/delete_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/title_delete_user"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</ScrollView>

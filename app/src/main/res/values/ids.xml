@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="facebook_app_id">FACEBOOK_APP_ID</string>
+	<string name="twitter_consumer_key">TWITTER_CONSUMER_KEY</string>
+	<string name="twitter_consumer_secret">TWITTER_CONSUMER_SECRET</string>
+</resources>

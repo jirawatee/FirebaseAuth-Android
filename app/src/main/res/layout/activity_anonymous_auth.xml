@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	style="@style/CustomRelativeLayout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<ImageView
+		android:id="@+id/icon"
+		style="@style/CustomLogoImageView"
+		android:contentDescription="@string/app_name"/>
+
+	<TextView
+		android:id="@+id/title_anonymous"
+		style="@style/TextAppearance.AppCompat.Medium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/icon"
+		android:text="@string/anonymous_signin"/>
+
+	<TextView
+		android:id="@+id/profile"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/title_anonymous"
+		tools:text="@string/signed_out"/>
+
+	<LinearLayout
+		android:id="@+id/buttons_anonymous"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/profile"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/button_anonymous_sign_in"
+			style="?android:attr/button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/sign_in"/>
+
+		<Button
+			android:id="@+id/button_anonymous_sign_out"
+			style="?android:attr/button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:enabled="false"
+			android:text="@string/sign_out"/>
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/line"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_below="@id/buttons_anonymous"
+		android:layout_marginBottom="@dimen/activity_vertical_margin"
+		android:layout_marginTop="@dimen/activity_vertical_margin"
+		android:background="@android:color/darker_gray"/>
+
+	<TextView
+		android:id="@+id/title_linking"
+		style="@style/TextAppearance.AppCompat.Medium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/line"
+		android:text="@string/account_link"/>
+
+	<LinearLayout
+		android:id="@+id/fields"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/title_linking"
+		android:orientation="horizontal">
+
+		<EditText
+			android:id="@+id/field_email"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="@string/hint_email"
+			android:inputType="textEmailAddress"/>
+
+		<EditText
+			android:id="@+id/field_password"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="@string/hint_password"
+			android:inputType="textPassword"/>
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/button_link_account"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/fields"
+		android:enabled="false"
+		android:text="@string/account_link_btn"/>
+
+</RelativeLayout>

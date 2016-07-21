@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	style="@style/CustomRelativeLayout"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<ImageView
+		android:id="@+id/logo"
+		style="@style/CustomLogoImageView"
+		android:contentDescription="@string/app_name"/>
+
+	<TextView
+		android:id="@+id/profile"
+		style="@style/CustomStatusTextView"
+		android:layout_below="@id/logo"
+		android:text="@string/signed_out"/>
+
+	<com.twitter.sdk.android.core.identity.TwitterLoginButton
+		android:id="@+id/button_twitter_login"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"/>
+
+	<Button
+		android:id="@+id/button_twitter_signout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/profile"
+		android:layout_centerHorizontal="true"
+		android:text="@string/sign_out"
+		android:theme="@style/ThemeOverlay.MyDarkButton"
+		android:visibility="gone"/>
+
+</RelativeLayout>

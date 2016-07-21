@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Authentication</string>
+
+	<string name="label_google_sign_in">Firebase + Google Sign In</string>
+	<string name="label_facebook_login">Firebase + Facebook Login</string>
+	<string name="label_twitter_login">Firebase + Twitter Login</string>
+	<string name="label_emailpassword">Email/Password Authentication</string>
+	<string name="label_anonymous_auth">Anonymous Authentication</string>
+	<string name="label_custom_auth">Custom Authentication</string>
+	<string name="label_manage_user">Manage User</string>
+
+	<string name="sign_in">Sign In</string>
+	<string name="create_account">Create Account</string>
+	<string name="sign_out">Sign Out</string>
+	<string name="disconnect">Disconnect</string>
+	<string name="loading">Loading…</string>
+	<string name="custom_token">Custom Token</string>
+	<string name="signed_out">Signed Out</string>
+	<string name="token_null">Token: null</string>
+
+	<string name="hint_email">Email</string>
+	<string name="hint_password">Password</string>
+	<string name="hint_name">Name</string>
+	<string name="hint_photo">Photo URL</string>
+
+	<string name="firebase_user_management">Firebase User Management</string>
+
+	<string name="logout">Logout?</string>
+	<string name="anonymous_signin">Anonymous Sign In</string>
+	<string name="account_link">Account Linking</string>
+	<string name="account_link_btn">Link Account</string>
+	<string name="title_provider">User\'s provider</string>
+	<string name="title_profile">User\'s profile</string>
+	<string name="title_update_profile">Update user\'s profile</string>
+	<string name="title_update_email">Update user\'s email</string>
+	<string name="title_update_password">Update user\'s password</string>
+	<string name="title_send_password_reset">Send password reset</string>
+	<string name="title_delete_user">Delete a user</string>
+	<string name="updated">%s updated.</string>
+</resources>
