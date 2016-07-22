@@ -5,6 +5,7 @@ Firebase Authentication code guideline for Android developer
 * Supported Android 2.3 (Gingerbread) and newer
 * Google Play services 9.2.1 or newer
 * Android Studio 1.5 or higher
+* google-services.json in app-level folder
 
 ## Features
 * Sign-in with Email and Password
