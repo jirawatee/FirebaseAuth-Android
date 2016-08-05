@@ -22,11 +22,11 @@ android {
 }
 
 dependencies {
-	compile 'com.android.support:appcompat-v7:24.1.0'
-	compile 'com.google.firebase:firebase-auth:9.2.1'
+	compile 'com.android.support:appcompat-v7:24.1.1'
+	compile 'com.google.firebase:firebase-auth:9.4.0'
 
 	// Google Sign In SDK (only required for Google Sign In)
-	compile 'com.google.android.gms:play-services-auth:9.2.1'
+	compile 'com.google.android.gms:play-services-auth:9.4.0'
 
 	// Facebook Android SDK (only required for Facebook Login)
 	compile 'com.facebook.android:facebook-android-sdk:4.14.0'
