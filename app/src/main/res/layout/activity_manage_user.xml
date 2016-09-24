@@ -6,7 +6,6 @@
 	android:scrollbarStyle="outsideOverlay">
 
 	<RelativeLayout
-		android:id="@+id/activity_manage_user"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content">
 
@@ -42,7 +41,6 @@
 				android:background="@android:color/darker_gray"/>
 
 			<TextView
-				android:id="@+id/title_provider"
 				style="@style/TextAppearance.AppCompat.Medium"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
@@ -74,7 +72,6 @@
 				android:background="@android:color/darker_gray"/>
 
 			<TextView
-				android:id="@+id/title_update_profile"
 				style="@style/TextAppearance.AppCompat.Medium"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
@@ -120,7 +117,6 @@
 				android:background="@android:color/darker_gray"/>
 
 			<TextView
-				android:id="@+id/title_update_email"
 				style="@style/TextAppearance.AppCompat.Medium"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
@@ -159,7 +155,6 @@
 				android:background="@android:color/darker_gray"/>
 
 			<TextView
-				android:id="@+id/title_update_password"
 				style="@style/TextAppearance.AppCompat.Medium"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
@@ -198,7 +193,6 @@
 				android:background="@android:color/darker_gray"/>
 
 			<TextView
-				android:id="@+id/title_send_password_reset"
 				style="@style/TextAppearance.AppCompat.Medium"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"

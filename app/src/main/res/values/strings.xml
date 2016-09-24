@@ -7,7 +7,6 @@
 	<string name="label_twitter_login">Firebase + Twitter Login</string>
 	<string name="label_emailpassword">Email/Password Authentication</string>
 	<string name="label_anonymous_auth">Anonymous Authentication</string>
-	<string name="label_custom_auth">Custom Authentication</string>
 	<string name="label_manage_user">Manage User</string>
 
 	<string name="sign_in">Sign In</string>
@@ -15,16 +14,12 @@
 	<string name="sign_out">Sign Out</string>
 	<string name="disconnect">Disconnect</string>
 	<string name="loading">Loading…</string>
-	<string name="custom_token">Custom Token</string>
 	<string name="signed_out">Signed Out</string>
-	<string name="token_null">Token: null</string>
 
 	<string name="hint_email">Email</string>
 	<string name="hint_password">Password</string>
 	<string name="hint_name">Name</string>
 	<string name="hint_photo">Photo URL</string>
-
-	<string name="firebase_user_management">Firebase User Management</string>
 
 	<string name="logout">Logout?</string>
 	<string name="anonymous_signin">Anonymous Sign In</string>
