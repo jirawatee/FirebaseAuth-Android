@@ -2,10 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
 	compileSdkVersion 25
-	buildToolsVersion "25.0.1"
+	buildToolsVersion "25.0.2"
 
 	defaultConfig {
-		applicationId "com.example.authen"
+		applicationId "com.example.auth"
 		minSdkVersion 17
 		targetSdkVersion 25
 		versionCode 1
@@ -16,25 +16,29 @@ android {
 	buildTypes {
 		release {
 			minifyEnabled true
+			shrinkResources true
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 		}
 	}
 }
 
+ext.supportLibraryVersion = '25.1.0'
+ext.firebaseLibraryVersion = '10.0.1'
+
 dependencies {
-	compile ('com.android.support:appcompat-v7:25.0.1') {
+	compile ("com.android.support:appcompat-v7:$supportLibraryVersion") {
 		force = true
 	}
-	compile 'com.google.firebase:firebase-auth:10.0.1'
+	compile "com.google.firebase:firebase-auth:$firebaseLibraryVersion"
 
 	// Google Sign In SDK (only required for Google Sign In)
-	compile 'com.google.android.gms:play-services-auth:10.0.1'
+	compile "com.google.android.gms:play-services-auth:$firebaseLibraryVersion"
 
-	// Facebook Android SDK (only required for Facebook Login)
-	compile 'com.facebook.android:facebook-android-sdk:4.17.0'
+	// Facebook Android SDK (only required for Facebook Login)z
+	compile 'com.facebook.android:facebook-android-sdk:4.18.0'
 
 	// Twitter Android SDK (only required for Twitter Login)
-	compile('com.twitter.sdk.android:twitter:2.2.0') {
+	compile('com.twitter.sdk.android:twitter:2.3.1') {
 		transitive = true;
 	}
 }

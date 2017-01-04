@@ -1,4 +1,4 @@
-package com.example.authen;
+package com.example.auth;
 
 import android.content.Context;
 import android.content.Intent;

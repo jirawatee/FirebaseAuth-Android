@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-	package="com.example.authen"
+	package="com.example.auth"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:installLocation="auto">
 
@@ -16,10 +16,10 @@
 			android:value="@string/facebook_app_id"/>
 
 		<activity
-			android:name=".FacebookLoginActivity"
+			android:name="com.example.auth.FacebookLoginActivity"
 			android:label="@string/label_facebook_login"/>
 
-		<activity android:name=".MainActivity">
+		<activity android:name="com.example.auth.MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 
@@ -28,24 +28,24 @@
 		</activity>
 
 		<activity
-			android:name=".GoogleSignInActivity"
+			android:name="com.example.auth.GoogleSignInActivity"
 			android:label="@string/label_google_sign_in"/>
 
 		<activity
-			android:name=".EmailPasswordActivity"
+			android:name="com.example.auth.EmailPasswordActivity"
 			android:label="@string/label_emailpassword"
 			android:windowSoftInputMode="stateAlwaysHidden"/>
 
 		<activity
-			android:name=".AnonymousAuthActivity"
+			android:name="com.example.auth.AnonymousAuthActivity"
 			android:label="@string/label_anonymous_auth"/>
 
 		<activity
-			android:name=".TwitterLoginActivity"
+			android:name="com.example.auth.TwitterLoginActivity"
 			android:label="@string/label_twitter_login"/>
 
 		<activity
-			android:name=".ManageUserActivity"
+			android:name="com.example.auth.ManageUserActivity"
 			android:label="@string/label_manage_user"
 			android:windowSoftInputMode="stateAlwaysHidden"/>
 
