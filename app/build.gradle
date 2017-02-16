@@ -6,11 +6,10 @@ android {
 
 	defaultConfig {
 		applicationId "com.example.auth"
-		minSdkVersion 17
+		minSdkVersion 25
 		targetSdkVersion 25
 		versionCode 1
 		versionName "1.0"
-		resConfigs("en", "th")
 	}
 
 	buildTypes {
@@ -22,11 +21,14 @@ android {
 	}
 }
 
-ext.supportLibraryVersion = '25.1.0'
-ext.firebaseLibraryVersion = '10.0.1'
+ext.supportLibraryVersion = '25.1.1'
+ext.firebaseLibraryVersion = '10.2.0'
 
 dependencies {
 	compile ("com.android.support:appcompat-v7:$supportLibraryVersion") {
+		force = true
+	}
+	compile ("com.android.support:design:$supportLibraryVersion") {
 		force = true
 	}
 	compile "com.google.firebase:firebase-auth:$firebaseLibraryVersion"
@@ -35,7 +37,7 @@ dependencies {
 	compile "com.google.android.gms:play-services-auth:$firebaseLibraryVersion"
 
 	// Facebook Android SDK (only required for Facebook Login)z
-	compile 'com.facebook.android:facebook-android-sdk:4.18.0'
+	compile 'com.facebook.android:facebook-android-sdk:4.19.0'
 
 	// Twitter Android SDK (only required for Twitter Login)
 	compile('com.twitter.sdk.android:twitter:2.3.1') {
