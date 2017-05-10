@@ -23,7 +23,6 @@
 		<activity android:name="com.example.auth.MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
-
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
@@ -35,7 +34,7 @@
 		<activity
 			android:name="com.example.auth.EmailPasswordActivity"
 			android:label="@string/label_emailpassword"
-			android:windowSoftInputMode="stateAlwaysHidden"/>
+			android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
 
 		<activity
 			android:name="com.example.auth.AnonymousAuthActivity"

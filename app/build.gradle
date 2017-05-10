@@ -21,8 +21,8 @@ android {
 	}
 }
 
-ext.supportLibraryVersion = '25.1.1'
-ext.firebaseLibraryVersion = '10.2.0'
+ext.supportLibraryVersion = '25.3.1'
+ext.firebaseLibraryVersion = '10.2.4'
 
 dependencies {
 	compile ("com.android.support:appcompat-v7:$supportLibraryVersion") {
@@ -37,10 +37,10 @@ dependencies {
 	compile "com.google.android.gms:play-services-auth:$firebaseLibraryVersion"
 
 	// Facebook Android SDK (only required for Facebook Login)z
-	compile 'com.facebook.android:facebook-android-sdk:4.19.0'
+	compile 'com.facebook.android:facebook-android-sdk:4.22.0'
 
 	// Twitter Android SDK (only required for Twitter Login)
-	compile('com.twitter.sdk.android:twitter:2.3.1') {
+	compile('com.twitter.sdk.android:twitter:2.3.2') {
 		transitive = true;
 	}
 }

@@ -33,4 +33,5 @@
 	<string name="title_send_password_reset">Send password reset</string>
 	<string name="title_delete_user">Delete a user</string>
 	<string name="updated">%s updated.</string>
+	<string name="verify">Verify</string>
 </resources>
