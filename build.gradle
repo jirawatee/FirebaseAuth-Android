@@ -2,23 +2,31 @@
 
 buildscript {
 	repositories {
+		maven { url 'https://maven.google.com' }
 		jcenter()
-		mavenLocal()
 	}
 	dependencies {
-		classpath 'com.android.tools.build:gradle:2.4.0-alpha7'
-		classpath 'com.google.gms:google-services:3.0.0'
+		classpath 'com.android.tools.build:gradle:2.3.3'
+		classpath 'com.google.gms:google-services:3.1.0'
 	}
 }
 
 allprojects {
 	repositories {
-		jcenter()
-		mavenLocal()
+		maven { url 'https://maven.google.com' }
 		maven { url 'https://maven.fabric.io/public' }
+		jcenter()
 	}
 }
 
 task clean(type: Delete) {
 	delete rootProject.buildDir
+}
+
+ext {
+	firebaseLibraryVersion = '11.0.2'
+	supportLibraryVersion = '25.4.0'
+	buildTools = '26.0.0'
+	compileSdk = 25
+	targetSdk = 25
 }

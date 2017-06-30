@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 import android.util.Log;
@@ -27,11 +28,12 @@ import java.net.URL;
 
 public class EmailPasswordActivity extends BaseActivity implements View.OnClickListener {
 	private static final String TAG = "EmailPasswordActivity";
-	private EditText mEmailField, mPasswordField;
+	private EditText mEdtEmail, mEdtPassword;
 	private FirebaseAuth mAuth;
 	private FirebaseAuth.AuthStateListener mAuthListener;
 	private ImageView mImageView;
 	private TextView mTextViewProfile;
+	private TextInputLayout mLayoutEmail, mLayoutPassword;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -39,9 +41,11 @@ public class EmailPasswordActivity extends BaseActivity implements View.OnClickL
 		setContentView(R.layout.activity_emailpassword);
 
 		mTextViewProfile = (TextView) findViewById(R.id.profile);
-		mEmailField = (EditText) findViewById(R.id.field_email);
-		mPasswordField = (EditText) findViewById(R.id.field_password);
+		mEdtEmail = (EditText) findViewById(R.id.edt_email);
+		mEdtPassword = (EditText) findViewById(R.id.edt_password);
 		mImageView = (ImageView) findViewById(R.id.logo);
+		mLayoutEmail = (TextInputLayout) findViewById(R.id.layout_email);
+		mLayoutPassword = (TextInputLayout) findViewById(R.id.layout_password);
 
 		findViewById(R.id.email_sign_in_button).setOnClickListener(this);
 		findViewById(R.id.email_create_account_button).setOnClickListener(this);
@@ -81,10 +85,10 @@ public class EmailPasswordActivity extends BaseActivity implements View.OnClickL
 	public void onClick(View v) {
 		switch (v.getId()) {
 			case R.id.email_create_account_button:
-				createAccount(mEmailField.getText().toString(), mPasswordField.getText().toString());
+				createAccount(mEdtEmail.getText().toString(), mEdtPassword.getText().toString());
 				break;
 			case R.id.email_sign_in_button:
-				signIn(mEmailField.getText().toString(), mPasswordField.getText().toString());
+				signIn(mEdtEmail.getText().toString(), mEdtPassword.getText().toString());
 				break;
 			case R.id.sign_out_button:
 				signOut();
@@ -169,14 +173,15 @@ public class EmailPasswordActivity extends BaseActivity implements View.OnClickL
 	}
 
 	private boolean validateForm() {
-		if (TextUtils.isEmpty(mEmailField.getText().toString())) {
-			mEmailField.setError("Required.");
+		if (TextUtils.isEmpty(mEdtEmail.getText().toString())) {
+			mLayoutEmail.setError("Required.");
 			return false;
-		} else if (TextUtils.isEmpty(mPasswordField.getText().toString())) {
-			mPasswordField.setError("Required.");
+		} else if (TextUtils.isEmpty(mEdtPassword.getText().toString())) {
+			mLayoutPassword.setError("Required.");
 			return false;
 		} else {
-			mEmailField.setError(null);
+			mLayoutEmail.setError(null);
+			mLayoutPassword.setError(null);
 			return true;
 		}
 	}

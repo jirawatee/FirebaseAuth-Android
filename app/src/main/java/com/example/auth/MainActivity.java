@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 			FacebookLoginActivity.class,
 			TwitterLoginActivity.class,
 			AnonymousAuthActivity.class,
+			PhoneAuthActivity.class,
 			ManageUserActivity.class
 	};
 

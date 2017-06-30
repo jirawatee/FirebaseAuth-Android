@@ -16,11 +16,7 @@
 			android:name="com.facebook.sdk.ApplicationId"
 			android:value="@string/facebook_app_id"/>
 
-		<activity
-			android:name="com.example.auth.FacebookLoginActivity"
-			android:label="@string/label_facebook_login"/>
-
-		<activity android:name="com.example.auth.MainActivity">
+		<activity android:name=".MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
@@ -28,26 +24,34 @@
 		</activity>
 
 		<activity
-			android:name="com.example.auth.GoogleSignInActivity"
+			android:name=".FacebookLoginActivity"
+			android:label="@string/label_facebook_login"/>
+
+		<activity
+			android:name=".GoogleSignInActivity"
 			android:label="@string/label_google_sign_in"/>
 
 		<activity
-			android:name="com.example.auth.EmailPasswordActivity"
+			android:name=".EmailPasswordActivity"
 			android:label="@string/label_emailpassword"
 			android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
 
 		<activity
-			android:name="com.example.auth.AnonymousAuthActivity"
+			android:name=".AnonymousAuthActivity"
 			android:label="@string/label_anonymous_auth"/>
 
 		<activity
-			android:name="com.example.auth.TwitterLoginActivity"
+			android:name=".TwitterLoginActivity"
 			android:label="@string/label_twitter_login"/>
 
 		<activity
-			android:name="com.example.auth.ManageUserActivity"
+			android:name=".ManageUserActivity"
 			android:label="@string/label_manage_user"
 			android:windowSoftInputMode="stateAlwaysHidden"/>
+
+		<activity
+			android:name=".PhoneAuthActivity"
+			android:label="@string/label_phone_auth"/>
 
 	</application>
 

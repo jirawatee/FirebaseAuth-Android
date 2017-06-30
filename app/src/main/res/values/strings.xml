@@ -7,6 +7,7 @@
 	<string name="label_twitter_login">Firebase + Twitter Login</string>
 	<string name="label_emailpassword">Email/Password Authentication</string>
 	<string name="label_anonymous_auth">Anonymous Authentication</string>
+	<string name="label_phone_auth">Phone Authentication</string>
 	<string name="label_manage_user">Manage User</string>
 
 	<string name="sign_in">Sign In</string>
@@ -34,4 +35,15 @@
 	<string name="title_delete_user">Delete a user</string>
 	<string name="updated">%s updated.</string>
 	<string name="verify">Verify</string>
+
+	<string name="start_phone_auth">Start</string>
+	<string name="verify_phone_auth">Verify</string>
+	<string name="resend_phone_auth">Resend</string>
+	<string name="hint_phone_number">Phone Number</string>
+	<string name="hint_verification_code">Verification Code</string>
+	<string name="status_verification_succeeded">Verification succeeded</string>
+	<string name="status_sign_in_failed">Sign-in failed</string>
+	<string name="instant_validation">(instant validation)</string>
+	<string name="firebase_status_fmt">Firebase User: %s</string>
+
 </resources>
