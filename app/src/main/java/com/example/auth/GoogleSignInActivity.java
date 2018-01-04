@@ -49,10 +49,10 @@ public class GoogleSignInActivity extends BaseActivity implements GoogleApiClien
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_google);
 
-		mImageView = (ImageView) findViewById(R.id.logo);
-		mTextViewProfile = (TextView) findViewById(R.id.profile);
+		mImageView = findViewById(R.id.logo);
+		mTextViewProfile = findViewById(R.id.profile);
 
-		SignInButton signInButton = (SignInButton) findViewById(R.id.sign_in_button);
+		SignInButton signInButton = findViewById(R.id.sign_in_button);
 		signInButton.setSize(SignInButton.SIZE_WIDE);
 		signInButton.setOnClickListener(this);
 

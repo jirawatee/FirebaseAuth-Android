@@ -40,12 +40,12 @@ public class EmailPasswordActivity extends BaseActivity implements View.OnClickL
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_emailpassword);
 
-		mTextViewProfile = (TextView) findViewById(R.id.profile);
-		mEdtEmail = (EditText) findViewById(R.id.edt_email);
-		mEdtPassword = (EditText) findViewById(R.id.edt_password);
-		mImageView = (ImageView) findViewById(R.id.logo);
-		mLayoutEmail = (TextInputLayout) findViewById(R.id.layout_email);
-		mLayoutPassword = (TextInputLayout) findViewById(R.id.layout_password);
+		mTextViewProfile = findViewById(R.id.profile);
+		mEdtEmail = findViewById(R.id.edt_email);
+		mEdtPassword = findViewById(R.id.edt_password);
+		mImageView = findViewById(R.id.logo);
+		mLayoutEmail = findViewById(R.id.layout_email);
+		mLayoutPassword = findViewById(R.id.layout_password);
 
 		findViewById(R.id.email_sign_in_button).setOnClickListener(this);
 		findViewById(R.id.email_create_account_button).setOnClickListener(this);

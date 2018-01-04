@@ -31,13 +31,13 @@ public class ManageUserActivity extends BaseActivity implements View.OnClickList
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_manage_user);
 
-		mTextViewProfile = (TextView) findViewById(R.id.profile);
-		mTextViewProvider = (TextView) findViewById(R.id.provider);
-		mEditTextName = (EditText) findViewById(R.id.field_name);
-		mEditTextPhoto = (EditText) findViewById(R.id.field_photo);
-		mEditTextEmail = (EditText) findViewById(R.id.field_email);
-		mEditTextPassword = (EditText) findViewById(R.id.field_password);
-		mEditTextEmailReset = (EditText) findViewById(R.id.field_email_reset);
+		mTextViewProfile = findViewById(R.id.profile);
+		mTextViewProvider = findViewById(R.id.provider);
+		mEditTextName = findViewById(R.id.field_name);
+		mEditTextPhoto = findViewById(R.id.field_photo);
+		mEditTextEmail = findViewById(R.id.field_email);
+		mEditTextPassword = findViewById(R.id.field_password);
+		mEditTextEmailReset = findViewById(R.id.field_email_reset);
 
 		findViewById(R.id.update_profile_button).setOnClickListener(this);
 		findViewById(R.id.update_email_button).setOnClickListener(this);

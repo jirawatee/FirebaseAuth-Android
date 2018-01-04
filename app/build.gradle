@@ -2,15 +2,17 @@ apply plugin: 'com.android.application'
 
 android {
 	compileSdkVersion compileAndTargetSdk
-	buildToolsVersion buildTools
+	buildToolsVersion '27.0.3'
+
 	defaultConfig {
 		applicationId 'com.example.auth'
-		minSdkVersion 26
+		minSdkVersion compileAndTargetSdk
 		targetSdkVersion compileAndTargetSdk
 		versionCode 1
 		versionName '1.0'
 		resConfigs ('en', 'xxxhdpi')
 	}
+
 	buildTypes {
 		release {
 			minifyEnabled true
@@ -23,6 +25,7 @@ android {
 			aaptOptions.cruncherEnabled = false
 		}
 	}
+
 	dexOptions {
 		preDexLibraries true
 		maxProcessCount 8
@@ -42,7 +45,7 @@ dependencies {
 	implementation "com.google.android.gms:play-services-auth:$firebaseLibraryVersion"
 
 	// Facebook Android SDK (only required for Facebook Login)
-	implementation 'com.facebook.android:facebook-android-sdk:4.26.0'
+	implementation 'com.facebook.android:facebook-android-sdk:4.29.0'
 
 	// Twitter Android SDK (only required for Twitter Login)
 	implementation('com.twitter.sdk.android:twitter:2.3.2') {

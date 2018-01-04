@@ -56,8 +56,8 @@ public class TwitterLoginActivity extends BaseActivity implements View.OnClickLi
 		// Inflate layout (must be done after Twitter is configured)
 		setContentView(R.layout.activity_twitter);
 
-		mImageView = (ImageView) findViewById(R.id.logo);
-		mTextViewProfile = (TextView) findViewById(R.id.profile);
+		mImageView = findViewById(R.id.logo);
+		mTextViewProfile = findViewById(R.id.profile);
 		findViewById(R.id.button_twitter_signout).setOnClickListener(this);
 
 		mAuth = FirebaseAuth.getInstance();
@@ -75,7 +75,7 @@ public class TwitterLoginActivity extends BaseActivity implements View.OnClickLi
 		};
 
 		// initialize_twitter_login
-		mLoginButton = (TwitterLoginButton) findViewById(R.id.button_twitter_login);
+		mLoginButton = findViewById(R.id.button_twitter_login);
 		mLoginButton.setCallback(new Callback<TwitterSession>() {
 			@Override
 			public void success(Result<TwitterSession> result) {

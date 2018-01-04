@@ -34,9 +34,9 @@ public class AnonymousAuthActivity extends BaseActivity implements View.OnClickL
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_anonymous_auth);
 
-		mTextViewProfile = (TextView) findViewById(R.id.profile);
-		mEmailField = (EditText) findViewById(R.id.field_email);
-		mPasswordField = (EditText) findViewById(R.id.field_password);
+		mTextViewProfile = findViewById(R.id.profile);
+		mEmailField = findViewById(R.id.field_email);
+		mPasswordField = findViewById(R.id.field_password);
 
 		findViewById(R.id.button_anonymous_sign_in).setOnClickListener(this);
 		findViewById(R.id.button_anonymous_sign_out).setOnClickListener(this);

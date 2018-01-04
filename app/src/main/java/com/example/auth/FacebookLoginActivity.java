@@ -47,8 +47,8 @@ public class FacebookLoginActivity extends BaseActivity implements View.OnClickL
 		FacebookSdk.sdkInitialize(this);
 		setContentView(R.layout.activity_facebook);
 
-		mImageView = (ImageView) findViewById(R.id.logo);
-		mTextViewProfile = (TextView) findViewById(R.id.profile);
+		mImageView = findViewById(R.id.logo);
+		mTextViewProfile = findViewById(R.id.profile);
 		findViewById(R.id.button_facebook_signout).setOnClickListener(this);
 
 		mAuth = FirebaseAuth.getInstance();
@@ -67,7 +67,7 @@ public class FacebookLoginActivity extends BaseActivity implements View.OnClickL
 
 		// Initialize Facebook Login button
 		mCallbackManager = CallbackManager.Factory.create();
-		LoginButton loginButton = (LoginButton) findViewById(R.id.button_facebook_login);
+		LoginButton loginButton = findViewById(R.id.button_facebook_login);
 		loginButton.setReadPermissions("email", "public_profile");
 		loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
 			@Override

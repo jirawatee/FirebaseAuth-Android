@@ -63,16 +63,16 @@ public class PhoneAuthActivity extends AppCompatActivity implements View.OnClick
 		if (savedInstanceState != null) {
 			onRestoreInstanceState(savedInstanceState);
 		}
-		mTextViewProfile = (TextView) findViewById(R.id.profile);
-		mPhoneNumberViews = (ViewGroup) findViewById(R.id.phone_auth_fields);
+		mTextViewProfile = findViewById(R.id.profile);
+		mPhoneNumberViews = findViewById(R.id.phone_auth_fields);
 
-		mPhoneNumberField = (EditText) findViewById(R.id.field_phone_number);
-		mVerificationField = (EditText) findViewById(R.id.field_verification_code);
+		mPhoneNumberField = findViewById(R.id.field_phone_number);
+		mVerificationField = findViewById(R.id.field_verification_code);
 
-		mStartButton = (Button) findViewById(R.id.button_start_verification);
-		mVerifyButton = (Button) findViewById(R.id.button_verify_phone);
-		mResendButton = (Button) findViewById(R.id.button_resend);
-		mSignOutButton = (Button) findViewById(R.id.sign_out_button);
+		mStartButton = findViewById(R.id.button_start_verification);
+		mVerifyButton = findViewById(R.id.button_verify_phone);
+		mResendButton = findViewById(R.id.button_resend);
+		mSignOutButton = findViewById(R.id.sign_out_button);
 
 		mStartButton.setOnClickListener(this);
 		mVerifyButton.setOnClickListener(this);
