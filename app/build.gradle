@@ -41,13 +41,10 @@ dependencies {
 	}
 	implementation "com.google.firebase:firebase-auth:$firebaseLibraryVersion"
 
-	// Google Sign In SDK (only required for Google Sign In)
 	implementation "com.google.android.gms:play-services-auth:$firebaseLibraryVersion"
 
-	// Facebook Android SDK (only required for Facebook Login)
-	implementation 'com.facebook.android:facebook-android-sdk:4.29.0'
+	implementation 'com.facebook.android:facebook-login:4.29.0'
 
-	// Twitter Android SDK (only required for Twitter Login)
 	implementation('com.twitter.sdk.android:twitter:2.3.2') {
 		transitive = true
 	}
