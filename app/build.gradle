@@ -11,6 +11,9 @@ android {
 		versionCode 1
 		versionName '1.0'
 		resConfigs ('en', 'xxxhdpi')
+		ndk {
+			abiFilters "x86", "x86_64", "arm64-v8a", "armeabi-v7a"
+		}
 	}
 
 	buildTypes {
@@ -40,11 +43,8 @@ dependencies {
 		force = true
 	}
 	implementation "com.google.firebase:firebase-auth:$firebaseLibraryVersion"
-
 	implementation "com.google.android.gms:play-services-auth:$firebaseLibraryVersion"
-
 	implementation 'com.facebook.android:facebook-login:4.29.0'
-
 	implementation('com.twitter.sdk.android:twitter:2.3.2') {
 		transitive = true
 	}
