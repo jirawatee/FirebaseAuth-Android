@@ -44,7 +44,7 @@ dependencies {
 	}
 	implementation "com.google.firebase:firebase-auth:$firebaseLibraryVersion"
 	implementation "com.google.android.gms:play-services-auth:$firebaseLibraryVersion"
-	implementation 'com.facebook.android:facebook-login:4.31.0'
+	implementation 'com.facebook.android:facebook-login:4.32.0'
 	implementation('com.twitter.sdk.android:twitter:2.3.2') {
 		transitive = true
 	}
