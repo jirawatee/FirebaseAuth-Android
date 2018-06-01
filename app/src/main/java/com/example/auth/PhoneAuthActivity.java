@@ -105,9 +105,7 @@ public class PhoneAuthActivity extends AppCompatActivity implements View.OnClick
 				if (e instanceof FirebaseAuthInvalidCredentialsException) {
 					mPhoneNumberField.setError("Invalid phone number.");
 				} else if (e instanceof FirebaseTooManyRequestsException) {
-					Snackbar.make(
-							findViewById(android.R.id.content), "The SMS quota for the project has been exceeded", Snackbar.LENGTH_SHORT
-					).show();
+					Snackbar.make(findViewById(android.R.id.content), "The SMS quota for the project has been exceeded", Snackbar.LENGTH_SHORT).show();
 				}
 				updateUI(STATE_VERIFY_FAILED);
 			}
