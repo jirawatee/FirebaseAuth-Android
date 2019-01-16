@@ -6,7 +6,7 @@ android {
 
 	defaultConfig {
 		applicationId 'com.example.auth'
-		minSdkVersion 27
+		minSdkVersion 28
 		targetSdkVersion compileAndTargetSdk
 		versionCode 1
 		versionName '1.0'
@@ -42,10 +42,10 @@ dependencies {
 	implementation("com.android.support:design:$supportLibraryVersion") {
 		force = true
 	}
-	implementation 'com.google.firebase:firebase-core:16.0.3'
-	implementation 'com.google.firebase:firebase-auth:16.0.3'
-	implementation 'com.google.android.gms:play-services-auth:16.0.0'
-	implementation 'com.facebook.android:facebook-login:4.36.1'
+	implementation 'com.google.firebase:firebase-core:16.0.6'
+	implementation 'com.google.firebase:firebase-auth:16.1.0'
+	implementation 'com.google.android.gms:play-services-auth:16.0.1'
+	implementation 'com.facebook.android:facebook-login:4.39.0'
 	implementation('com.twitter.sdk.android:twitter:2.3.2') {
 		transitive = true
 	}
