@@ -42,8 +42,8 @@ dependencies {
 	implementation("com.android.support:design:$supportLibraryVersion") {
 		force = true
 	}
-	implementation 'com.google.firebase:firebase-core:16.0.8'
-	implementation 'com.google.firebase:firebase-auth:16.2.1'
+	implementation 'com.google.firebase:firebase-core:16.0.9'
+	implementation 'com.google.firebase:firebase-auth:17.0.0'
 	implementation 'com.google.android.gms:play-services-auth:16.0.1'
 	implementation 'com.facebook.android:facebook-login:4.42.0'
 	implementation('com.twitter.sdk.android:twitter:2.3.2') {
