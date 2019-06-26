@@ -1,7 +1,7 @@
 package com.example.auth;
 
 import android.app.ProgressDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class BaseActivity extends AppCompatActivity {
     private ProgressDialog mProgressDialog;

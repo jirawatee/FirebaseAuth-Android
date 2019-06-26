@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
 	compileSdkVersion compileAndTargetSdk
-	buildToolsVersion '28.0.3'
+	buildToolsVersion '29.0.0'
 
 	defaultConfig {
 		applicationId 'com.example.auth'
@@ -36,16 +36,16 @@ android {
 }
 
 dependencies {
-	implementation("com.android.support:appcompat-v7:$supportLibraryVersion") {
+	implementation('androidx.appcompat:appcompat:1.0.0') {
 		force = true
 	}
-	implementation("com.android.support:design:$supportLibraryVersion") {
+	implementation('com.google.android.material:material:1.0.0') {
 		force = true
 	}
-	implementation 'com.google.firebase:firebase-core:16.0.9'
-	implementation 'com.google.firebase:firebase-auth:17.0.0'
-	implementation 'com.google.android.gms:play-services-auth:16.0.1'
-	implementation 'com.facebook.android:facebook-login:4.42.0'
+	implementation 'com.google.firebase:firebase-core:17.0.0'
+	implementation 'com.google.firebase:firebase-auth:18.0.0'
+	implementation 'com.google.android.gms:play-services-auth:17.0.0'
+	implementation 'com.facebook.android:facebook-login:5.1.0'
 	implementation('com.twitter.sdk.android:twitter:2.3.2') {
 		transitive = true
 	}
